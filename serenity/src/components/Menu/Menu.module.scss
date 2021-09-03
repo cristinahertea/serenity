@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@keyframes easeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menuWrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 0.5rem;
+  padding: 0 1rem;
+  animation: easeIn 1s ease-in;
+}
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  margin: auto 20px;
+  user-select: none;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+  transition: 250ms;
+
+  &:hover {
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.navWrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  grid-gap: 5px;
+}
+
+.navButton {
+  all: unset;
+  transition: 250ms;
+  margin: auto 0;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: 'Fredoka One', cursive;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.navButtonActive {
+  background: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,19 @@
+.article {
+  width: 100%;
+  height: 100%;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-auto-rows: auto;
+
+  &-copy {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  &-title {
+    color: white;
+    font-size: 5rem;
+    margin: auto;
+  }
+}

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+.appWrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: min-content auto;
+}

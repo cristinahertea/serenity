@@ -1,0 +1,62 @@
+.card {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: 310px auto;
+  grid-template-areas: 'image' 'text' 'stats';
+  border-radius: 18px;
+  background: #1d1d1d;
+  color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: 'Dancing Script', cursive;
+  text-align: justify;
+  cursor: pointer;
+  width: min-content;
+  height: min-content;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  border: 3px solid transparent;
+  box-sizing: border-box;
+
+  &-tilt {
+    width: min-content !important;
+    background: none !important;
+    margin: auto !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+  }
+
+  &-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+
+  &-text {
+    grid-area: text;
+    margin: 25px;
+    transform: translateZ(30px);
+
+    &-date {
+      color: rgb(197, 108, 145);
+      font-size: 1.25rem;
+    }
+
+    & p {
+      font-family: 'Fredoka One', cursive;
+      color: grey;
+      font-size: 1rem;
+      font-weight: 300;
+      text-align: left;
+    }
+
+    & h2 {
+      margin-top: 0px;
+      font-size: 2.5rem;
+    }
+  }
+}
